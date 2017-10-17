@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class TitleControl : MonoBehaviour
 {
-    public Button NormalButton;
-    public Button VRButton;
+    public Button normalButton;
+    public Button vrButton;
 
     // Use this for initialization
     void Start ()
     {
-        NormalButton.onClick.AddListener(OnNormalButtonClick);
-        VRButton.onClick.AddListener(OnVRButtonClick);
+        normalButton.onClick.AddListener(OnNormalButtonClick);
+        vrButton.onClick.AddListener(OnVRButtonClick);
     }
 	
 	private void OnNormalButtonClick()

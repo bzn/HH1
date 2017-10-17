@@ -292,8 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2405f7293565ee54b9ec384a33300f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NormalButton: {fileID: 1832096128}
-  VRButton: {fileID: 2109694341}
+  normalButton: {fileID: 1832096128}
+  vrButton: {fileID: 2109694341}
 --- !u!4 &1737482262
 Transform:
   m_ObjectHideFlags: 0
