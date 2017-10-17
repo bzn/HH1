@@ -5,11 +5,11 @@ public class Scroller : MonoBehaviour
     private float count = 3;
     private float speed = 100;
     private float wrapPoint = 400;
-    public float position;
+    private float position;
 
     void Start()
     {
-        position = Vector3.Dot(transform.position, transform.forward);
+        position = Vector3.Dot(this.transform.parent.transform.position, this.transform.parent.transform.forward);
     }
 
     void Update()
@@ -18,6 +18,6 @@ public class Scroller : MonoBehaviour
 
         if (position > wrapPoint) position -= wrapPoint * count;
 
-        transform.position = transform.forward * position;
+        this.transform.parent.transform.position = this.transform.parent.transform.forward * position;
     }
 }
